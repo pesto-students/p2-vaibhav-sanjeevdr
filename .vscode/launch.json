@@ -5,10 +5,28 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "pwa-chrome",
+            "name": "Attach",
+            "port": 9229,
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "name": "Launch Chrome",
             "request": "launch",
-            "name": "Open MusicPlayer.html",
-            "file": "f:\\PESTO\\PestoCode\\p2-vaibhav-sanjeevdr\\Week-1\\Assignment2\\MusicPlayer.html"
+            "type": "chrome",
+            "file": "F:\\PESTO\\PestoCode\\p2-vaibhav-sanjeevdr\\Week-1\\Assignment2\\MusicPlayer.html"
+        },
+        
+
+        
+        {
+            "name": "Launch Article",
+            "request": "launch",
+            "type": "pwa-chrome",            
+            "file": "F:\\PESTO\\PestoCode\\p2-vaibhav-sanjeevdr\\Week-2\\article.html"
         }
     ]
 }
