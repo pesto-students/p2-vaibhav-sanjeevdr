@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <style>
+        
+        .menu1 { grid-area: menu1; }
+        .menu2 { grid-area: menu2; }
+        .menu3 { grid-area: menu3; }
+        .menu4 { grid-area: menu4; }
+        .menu5 { grid-area: menu5; }
+        .menu6 { grid-area: menu6; }
+        .menu7 { grid-area: menu7; }
+        .menu8 { grid-area: menu8; }
+        
+        .item1 { grid-area: image; }
+        .item2 { grid-area: imagedesc; }
+        .item3 { grid-area: songschart; }
+        .item4 { grid-area: track; }
+        
+        
+        
+        .grid-container {
+          display: grid;
+          grid-template-columns: 4ch 17ch auto;
+          grid-template-areas:
+            'menu1 image imagedesc imagedesc imagedesc imagedesc'
+            'menu2 image imagedesc imagedesc imagedesc imagedesc'
+            'menu3 image imagedesc imagedesc imagedesc imagedesc'
+            'menu4 image imagedesc imagedesc imagedesc imagedesc'
+            'menu5 songschart songschart songschart songschart songschart'
+            'menu6 songschart songschart songschart songschart songschart'
+            'menu7 songschart songschart songschart songschart songschart'
+            'menu8 songschart songschart songschart songschart songschart'            
+            'track track track track track track';
+            
+             background-color: black;  
+          
+        }
+
+        .menu1,.menu2,.menu3,.menu4,.menu5,.menu6,.menu7,.menu8 { 
+          height: 32px;
+          width:  24px;
+          display: block;
+          padding-left: 8px;
+          padding-right: 0px;
+          background-color: #d9d8d4; }
+        
+        .item1 {
+          background-color: black;
+          display: block;
+          margin-left: 15px;
+          margin-top: 10px;
+          
+          height: 110px;
+          width:  80px;
+        }
+        
+         .item2 {
+          font-family: Lato;   
+          background-color: black;
+          margin-top: 10px;
+          text-align: left; 
+          font-size: 16px;
+          color: white;
+        }
+        
+        pre {
+            font-family: Lato;
+  			display: block;
+            font-size: 10px;
+			}
+            
+        .item2pre{
+            font-family: Lato;
+        	display: block;
+            font-size: 10px; 
+            margin-top: 20px;
+        }    
+        
+        .item3 {
+          background-color: white;
+          text-align: center; 
+          font-size: 12px;
+          color: black;
+        }          
+                 
+        #songs {
+        font-family: Lato;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        #songs td {
+        text-align: left;           
+        border: 1px solid #ddd;
+        padding: 2px;
+        padding-left: 50px;
+        }
+
+        #songs tr:nth-child(even){background-color: #f2f2f2;}
+
+        #songs tr:hover {background-color: #ddd;}
+
+        .item4 {
+          background-color: #34a8eb;
+          text-align: left; 
+          font-size: 15px;
+          color: white;         
+        }          
+
+        #song {
+        background-color: #34a8eb;    
+        font-family: Lato;
+        border-collapse: collapse;
+        width: 100%;
+        
+        }
+
+        .item4p{
+            font-family: Lato;
+        	display: block;
+            font-size: 10px; 
+            text-align: left;
+        }   
+        
+        </style>
+</head>
+
+<body>
+
+<div class="grid-container">
+  
+  <div class="menu1"><i class="las la-bars"></i></div>
+  <div class="menu2"><i class="las la-home"></i></div>
+  <div class="menu3"><i class="las la-search"></i></div>
+  <div class="menu4"><i class="las la-volume-up"></i></div>
+  <div class="menu5"><i class="las la-user"></i></div>
+  <div class="menu6"><i class="las la-cog"></i></div>
+  <div class="menu7"><i class="las la-spotify"></i></div>
+  <div class="menu8"><i class="las la-soundcloud"></i></div>  
+
+  
+  <div class="item1"><img src="https://vif1g.csb.app/src/assets/cattyboard.jpg" alt="Catty Board" width="100" height="100"></div>  
+  <div class="item2">
+  CattyBoard Top Hundred Single Charts(11.06.36)<pre>Unknown Artist
+2016.Charts.100songs
+  </pre>  
+  <pre class="item2pre">
+<i class="las la-play"></i>Play all  <i class="las la-plus"></i>Add to  <i class="las la-ellipsis-h"></i>More
+  </pre> 
+  </div>
+  <div class="item3">
+    <table id="songs">
+       <tr>
+          <td>1.One Dance</td>
+          <td>Crake feat Catkid & Cyla </td>
+          <td>2.54</td>
+          <td>CATTY CLOUD SYNC</td>
+        </tr>
+        <tr>
+          <td>2.Panda</td>
+          <td>Cattee</td>
+          <td>4:06</td>
+          <td>CATTY CLOUD SYNC</td>
+        </tr>
+        <tr>
+            <td>3.Can't stop the feeling!</td>
+            <td>Catin Cimberlake</td>
+            <td>3:56</td>
+            <td>CATTY CLOUD SYNC</td>
+        </tr>
+        <tr>
+            <td>4.Work From Home </td>
+            <td>Cat Harmony feat Colla</td>
+            <td>3:34</td>
+            <td>CATTY CLOUD SYNC</td>
+        </tr>
+    </table>
+  </div>
+  <div class="item4">
+    <table id="song">
+        <tr>
+           <td width="50">
+               <img src="https://vif1g.csb.app/src/assets/cattyboard.jpg" alt="Catty Board" width="50" height="50">  
+           </td>
+           <td >
+           <p class="item4p">
+            If It Ain't Love  <br>
+            Catson Derulo  
+           </p> </td>
+           <td><i class="las la-step-backward"></i> </td>
+           <td><i class="las la-play"></i></td>
+           <td><i class="las la-step-forward"></i></td>
+           <td><i class="las la-undo-alt"></i></td>
+           <td><i class="las la-random"></i></td>
+         </tr>
+    </table>    
+  </div>
+</div>
+
+</body>
+</html>
+
+
